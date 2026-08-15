@@ -27,7 +27,7 @@ public class PaymentStrategyResolver {
     }
 
     public PaymentStrategy resolve(PaymentProvider provider) {
-
+        System.out.println("strategyMap ::: " + strategyMap);
        PaymentStrategy strategy = strategyMap.get(provider);
 
        if (strategy == null) {
