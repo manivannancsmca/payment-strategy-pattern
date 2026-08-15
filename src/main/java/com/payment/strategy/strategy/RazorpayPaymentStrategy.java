@@ -2,10 +2,13 @@ package com.payment.strategy.strategy;
 
 import java.util.UUID;
 
+import org.springframework.stereotype.Component;
+
 import com.payment.strategy.dto.PaymentRequest;
 import com.payment.strategy.dto.PaymentResponse;
 import com.payment.strategy.model.PaymentProvider;
 
+@Component
 public class RazorpayPaymentStrategy implements PaymentStrategy {
 
     @Override
